@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+.header {
+  background: linear-gradient(135deg, #b53b30, #6d5818);
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 2rem;
+  background-image: linear-gradient(to right, #8f3d35, #665523);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.hero-content {
+  max-width: 50%;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: #fff;
+  color: #000000;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero-img {
+  max-width: 45%;
+  animation: slideIn 2s ease-in-out;
+  border-radius: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  background-color: #ff6f61;
+  text-align: center;
+  color: #333;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ff6f61;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: #ff6f61;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1.1rem;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 4rem 2rem;
+  background-color: #ff6f61;
+  text-align: center;
+  color: #000000;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ff6f61;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.socials {
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
